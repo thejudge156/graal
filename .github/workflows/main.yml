@@ -95,6 +95,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        os: [ubuntu-latest]
+        architecture: [ARM64]
         include:
           # /compiler
           - env:
