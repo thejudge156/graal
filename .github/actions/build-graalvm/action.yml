@@ -16,7 +16,10 @@ inputs:
     default: ''
 
 runs:
-  using: 'composite'
+  strategy:
+      matrix:
+        os: [ubuntu-latest]
+        architecture: [ARM64]
   steps:
     - name: Set up environment variables
       shell: bash
